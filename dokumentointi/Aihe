@@ -1,6 +1,9 @@
 Kingmaker -pelin kaupunkitietokanta
 
-Tietokanta koostuu pelattavan maan kaupungeista ja kapunkien sisältämistä rakennuksista. Kaikkiin rakennustyyppeihin liittyy erillaisia ominasiuuksia, joista suurin osa on numeerisia. Tietokannan käyttäjät voivat lisätä kaupunkeja ja kaupunkeihin rakennuksia sekä poistaa niitä. Lisäksi he voivat hakea kaupunkien ja rakennusten tietoja. Käyttäjiä ovat pelinjohtajat, pelaajat ja ylläpitäjä. Pelinjohtajat ja pelaajat ovat kuitenkin käytännössä samoja käyttäjiä. Eli tietokannalla on vain yksi käyttäjätyyppi ylläpitäjän lisäksi.
+Tietokanta koostuu pelattavan maan kaupungeista ja kapunkien sisältämistä rakennuksista. Kaikkiin rakennustyyppeihin liittyy erillaisia 
+ominasiuuksia, joista suurin osa on numeerisia. Tietokannan käyttäjät voivat lisätä kaupunkeja ja kaupunkeihin rakennuksia sekä poistaa niitä. 
+Lisäksi he voivat hakea kaupunkien ja rakennusten tietoja. Käyttäjiä ovat pelinjohtajat, pelaajat ja ylläpitäjä. Pelinjohtajat ja pelaajat ovat 
+kuitenkin käytännössä samoja käyttäjiä. Eli tietokannalla on vain yksi käyttäjätyyppi ylläpitäjän lisäksi.
 
 Käyttötapaukset:
 
