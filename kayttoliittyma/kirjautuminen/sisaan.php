@@ -1,20 +1,24 @@
 <?php
  session_start();
 
-	$salasanat = array();
-	$salasanat["Morinth"] = "kissa";
-	$salasanat["DM"] = "koira";
-
+	require_once '../yhteys.php';
+	
 	$tunnus = $_POST["tunnus"];
 	$salasana = $_POST["salasana"];
-
-	if (isset($salasanat[$tunnus])) {
-		if ($salasanat[$tunnus] == $salasana) {
+	
+	$kysyTunnusta = $yhteys->prepare("SELECT kayttajatunnus, salasana FROM kayttajat WHERE kayttajatunnus=?");
+	
+	$kysyTunnusta->execute(array($tunnus));
+	$kayttaja = $kysyTunnusta->fetchObject();
+	
+	if ($kayttaja->kayttajatunnus == false) {
+		die;
+	}
+	else if ($kayttaja->salasana == $salasana) {
 			$_SESSION["kayttaja"] = $tunnus;
 			header("Location: /sivut/etusivu.php");
 			die();
-		}
 	}
 ?>
 <p>Tunnus tai salasana on väärin.</p>
-<p><a href="index.php">Takaisin</a></p>
+<p><a href="../index.php">Takaisin</a></p>

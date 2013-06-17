@@ -1,5 +1,9 @@
 <?php
 	require_once 'istunto.php';
+	require_once '../yhteys.php';
+	
+	$kysely = $yhteys->prepare("SELECT * FROM stormland");
+	$kysely->execute();
 ?>
 
 <html>
@@ -14,12 +18,25 @@
 	
 	<h2>Kaupungit</h2>
 	<h3>Kaupunkihaku</h3>
-
-	<a href="lisaaKaupunki">Lisää kaupunki</a>
+	
+	<p>
+		<?php
+		echo "<table border>";
+		while ($rivi = $kysely->fetch()) {
+			echo "<tr>";
+			echo "<td>" . $rivi["kaupungit"] . "</td>";
+			echo "<td>" . $rivi["asukasluku"] . "</td>";
+			echo "<td>" . $rivi["rantoja"] . "</td>";
+			echo "</tr>";
+		}
+		echo "</table>";
+		?>
+	</p>
+	
+	<a href="http://pisapisa.users.cs.helsinki.fi/sivut/lisaaKaupunki.php">Lisää kaupunki</a>
 	<a href="muokkaaKaupunkeja">Muokkaa kaupunkeja</a>
-	<a href="lisaaRakennus">Lisää rakennus</a>
-	<a href="poistaKaupunkeja">Poista kaupunkeja</a>
+	<a href="http://pisapisa.users.cs.helsinki.fi/sivut/poistaKaupunki.php">Poista kaupunkeja</a>
 	<a href="kaupunkityypit">Kaupunkityypit</a>
-	<a href="erikoisominaisuudet">Kaupunkien erikoisominaisuudet</a>
+	
  </body>
 </html>
