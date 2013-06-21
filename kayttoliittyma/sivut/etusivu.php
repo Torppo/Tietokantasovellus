@@ -16,7 +16,7 @@
 	<p>Esittely</p>
 
 	<?php
-		require_once 'kaikkiLinkit.php';
+		require_once 'linkit/kaikkiLinkit.php';
 	?>
 	
  </body>

@@ -16,7 +16,7 @@
 	}
 	else if ($kayttaja->salasana == $salasana) {
 			$_SESSION["kayttaja"] = $tunnus;
-			header("Location: /sivut/etusivu.php");
+			header("Location: ../sivut/etusivu.php");
 			die();
 	}
 ?>

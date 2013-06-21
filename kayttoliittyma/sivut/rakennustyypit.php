@@ -1,9 +1,7 @@
 <?php
 	require_once 'istunto.php';
 	require_once '../yhteys.php';
-
-	$kysely = $yhteys->prepare("SELECT * FROM rakennustyypit");
-	$kysely->execute();
+	require_once 'sisallonHaku/rakennustyyppienHaku.php';
 ?>
 
 <html>
@@ -17,7 +15,29 @@
 	?>
 
 	<h2>Rakennustyypit</h2
-	<h3>Rakennushaku</h3>
+	<h3>Rakennustyyppihaku</h3>
+
+	<form  action="rakennustyypit.php" method="post">
+	<p>Rakennus: <br>
+	<input type="text" name="rakennus"></p>
+	<p>Hinta(BP): <br>
+	<input type="integer" name="hintabp"></p>
+	<p>Koko: <br>
+	<input type="integer" name="koko"></p>
+	<p>Talouslisaä: <br>
+	<input type="integer" name="talouslisa"></p>
+	<p>Uskollisuuslisä: <br>
+	<input type="integer" name="uskollisuuslisa"></p>
+	<p>Vakauslisä: <br>
+	<input type="integer" name="vakauslisa"></p>
+	<p>Levottomuus: <br>
+	<input type="integer" name="levottomuus"></p>
+	<p>Puolustus: <br>
+	<input type="integer" name="puolustus"></p>
+	<p>Arvolisä: <br>
+	<input type="integer" name="arvolisa"></p>
+	<input type="submit" value="Hae">
+	</form>
 
 	<p>
 	<?php

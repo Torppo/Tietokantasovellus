@@ -1,5 +1,5 @@
 <?php
-	require_once 'istunto.php';
+	require_once '../istunto.php';
 ?>
 
 <html>
@@ -9,7 +9,7 @@
  <body>
  
 	<?php
-		require_once 'sivurakenne.php';
+		require_once '../sivurakenne.php';
 	?>
 
 	<h2>Poista kaupunki</h2>

@@ -1,5 +1,5 @@
 <?php
-	require_once 'istunto.php';
+	require_once '../istunto.php';
 ?>
 
 <html>
@@ -9,7 +9,7 @@
  <body>
  
 	<?php
-		require_once 'sivurakenne.php';
+		require_once '../sivurakenne.php';
 	?>
 
 	<h2>Lisää kaupunki</h2>
@@ -18,9 +18,9 @@
 	<p>Kaupunki: <br>
 	<input type="text" name="kaupunki"></p>
 	<p>Asukasluku: <br>
-	<input type="text" name="asukasluku"></p>
+	<input type="integer" name="asukasluku"></p>
 	<p>Rantoja: <br>
-	<input type="text" name="rantoja"></p>
+	<input type="integer" name="rantoja"></p>
 	<input type="submit" value="Luo">
 	</form> 
 

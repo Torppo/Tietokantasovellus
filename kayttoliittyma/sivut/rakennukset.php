@@ -1,12 +1,12 @@
 <?php
 	require_once 'istunto.php';
 	require_once '../yhteys.php';
-	require_once 'sisallonHaku/kaupunkiHaku.php';
+	require_once 'sisallonHaku/rakennusHaku.php';
 ?>
 
 <html>
  <head>
-  <title>Kaupungit</title>
+  <title>Rakennukset</title>
  </head>
  <body>
  
@@ -14,15 +14,15 @@
 		require_once 'sivurakenne.php';
 	?>
 	
-	<h2>Kaupungit</h2>
-	<h3>Kaupunkihaku</h3>
-	<form  action="kaupungit.php" method="post">
+	<h2>Rakennukset</h2>
+	<h3>Rakennushaku</h3>
+	<form  action="rakennukset.php" method="post">
+	<p>Nimi: <br>
+	<input type="text" name="nimi"></p>
+	<p>Rakennustyyppi: <br>
+	<input type="text" name="rakennustyyppi"></p>
 	<p>Kaupunki: <br>
-	<input type="text" name="kaupungit"></p>
-	<p>Asukasluku: <br>
-	<input type="integer" name="asukasluku"></p>
-	<p>Rantoja: <br>
-	<input type="integer" name="rantoja"></p>
+	<input type="text" name="kaupunki"></p>
 	<input type="submit" value="Hae">
 	</form>
 
@@ -31,9 +31,9 @@
 		echo "<table border>";
 		while ($rivi = $kysely->fetch()) {
 			echo "<tr>";
-			echo "<td>" . $rivi["kaupungit"] . "</td>";
-			echo "<td>" . $rivi["asukasluku"] . "</td>";
-			echo "<td>" . $rivi["rantoja"] . "</td>";
+			echo "<td>" . $rivi["nimi"] . "</td>";
+			echo "<td>" . $rivi["rakennustyyppi"] . "</td>";
+			echo "<td>" . $rivi["kaupunki"] . "</td>";
 			echo "</tr>";
 		}
 		echo "</table>";
