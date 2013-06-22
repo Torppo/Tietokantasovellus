@@ -12,10 +12,9 @@
 		$kysely2->execute(array($_POST["kaupunki"]));
 		$yhteys->commit();
 	
-		header("Location: /sivut/lomakkeet/poistaKaupunki.php");
 	} catch (PDOException $e) {
 		$yhteys->rollBack();
 		echo "Virhe: " . $e->getMessage();
 		}
-
+	header("Location: ../kaupungit.php");
 ?>

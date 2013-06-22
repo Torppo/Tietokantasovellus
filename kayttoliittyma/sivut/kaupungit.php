@@ -41,7 +41,7 @@
 	</p>
 	
 	<a href="http://pisapisa.users.cs.helsinki.fi/sivut/lomakkeet/lisaaKaupunki.php">Lisää kaupunki</a>
-	<a href="muokkaaKaupunkeja">Muokkaa kaupunkeja</a>
+	<a href="http://pisapisa.users.cs.helsinki.fi/sivut/lomakkeet/muokkaaKaupunkeja.php">Muokkaa kaupunkeja</a>
 	<a href="http://pisapisa.users.cs.helsinki.fi/sivut/lomakkeet/poistaKaupunki.php">Poista kaupunkeja</a>
 
  </body>

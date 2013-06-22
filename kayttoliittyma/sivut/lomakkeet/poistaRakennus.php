@@ -4,7 +4,7 @@
 
 <html>
  <head>
-  <title>Poista käyttäjä</title>
+  <title>Poista rakennus</title>
  </head>
  <body>
  
@@ -12,10 +12,10 @@
 		require_once '../sivurakenne.php';
 	?>
 
-	<h2>Poista käyttäjä</h2>
+	<h2>Poista rakennus</h2>
 	
-	<form action="kayttajanPoistaminen.php" method="post">
-	<p>Käyttäjätunnus: <br>
+	<form action="rakennuksenPoisto.php" method="post">
+	<p>Tunnus: <br>
 	<input type="text" name="tunnus"></p>
 	<input type="submit" value="Poista">
 	</form> 

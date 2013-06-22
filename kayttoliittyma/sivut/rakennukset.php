@@ -31,6 +31,7 @@
 		echo "<table border>";
 		while ($rivi = $kysely->fetch()) {
 			echo "<tr>";
+			echo "<td>" . $rivi["id"] . "</td>";
 			echo "<td>" . $rivi["nimi"] . "</td>";
 			echo "<td>" . $rivi["rakennustyyppi"] . "</td>";
 			echo "<td>" . $rivi["kaupunki"] . "</td>";
@@ -40,9 +41,9 @@
 		?>
 	</p>
 	
-	<a href="http://pisapisa.users.cs.helsinki.fi/sivut/lomakkeet/lisaaKaupunki.php">Lisää kaupunki</a>
-	<a href="muokkaaKaupunkeja">Muokkaa kaupunkeja</a>
-	<a href="http://pisapisa.users.cs.helsinki.fi/sivut/lomakkeet/poistaKaupunki.php">Poista kaupunkeja</a>
+	<a href="http://pisapisa.users.cs.helsinki.fi/sivut/lomakkeet/lisaaRakennus.php">Lisää rakennus</a>
+	<a href="http://pisapisa.users.cs.helsinki.fi/sivut/lomakkeet/muokkaaRakennuksia.php">Uudelleennimeä rakennus</a>
+	<a href="http://pisapisa.users.cs.helsinki.fi/sivut/lomakkeet/poistaRakennus.php">Poista rakennus</a>
 
  </body>
 </html>

@@ -14,7 +14,7 @@
 		require_once 'sivurakenne.php';
 	?>
 
-	<h2>Rakennustyypit</h2
+	<h2>Rakennustyypit</h2>
 	<h3>Rakennustyyppihaku</h3>
 
 	<form  action="rakennustyypit.php" method="post">
@@ -58,5 +58,9 @@
 		echo "</table>";
 	?>
 	</p>
+
+	<a href="http://pisapisa.users.cs.helsinki.fi/sivut/lomakkeet/lisaaRakennustyyppi.php">Lisää rakennustyyppi</a>
+	<a href="http://pisapisa.users.cs.helsinki.fi/sivut/lomakkeet/muokkaaRakennustyyppeja.php">Muokkaa rakennusttyypejä</a>
+	<a href="http://pisapisa.users.cs.helsinki.fi/sivut/lomakkeet/poistaRakennustyyppi.php">Poista rakennustyyppi</a>
  </body>
 </html>

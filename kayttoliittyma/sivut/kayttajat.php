@@ -41,7 +41,7 @@
 	</p>
 	
 	<a href="http://pisapisa.users.cs.helsinki.fi/sivut/lomakkeet/lisaaKayttaja.php">Lisää käyttäjä</a>
-	<a href="muokkaaKayttajatietoja">Muokkaa käyttäjää</a>
+	<a href="http://pisapisa.users.cs.helsinki.fi/sivut/lomakkeet/muutaKayttajatietoja.php">Muokkaa käyttäjää</a>
 	<a href="http://pisapisa.users.cs.helsinki.fi/sivut/lomakkeet/poistaKayttaja.php">Poista käyttäjä</a>
 
  </body>

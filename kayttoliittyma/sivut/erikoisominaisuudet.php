@@ -36,7 +36,7 @@
 	</p>
 	
 	<a href="http://pisapisa.users.cs.helsinki.fi/sivut/lomakkeet/lisaaErikoisominaisuus.php">Lisää erikoisominaisuus</a>
-	<a href="muokkaErikoisominaisuuksia">Muokkaa erikoisominaisuutta</a>
+	<a href="http://pisapisa.users.cs.helsinki.fi/sivut/lomakkeet/muokkaaErikoisominaisuuksia.php">Muokkaa erikoisominaisuuksia</a>
 	<a href="http://pisapisa.users.cs.helsinki.fi/sivut/lomakkeet/poistaErikoisominaisuus.php">Poista erikoisominaisuus</a>
 	
  </body>

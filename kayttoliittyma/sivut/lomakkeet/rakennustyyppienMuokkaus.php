@@ -1,13 +1,10 @@
 <?php
+	require_once '../istunto.php';
+	require_once '../../yhteys.php';
+	
 	$conditions = array();
 	$data = array();
 
-
-	if(!empty($_POST['rakennus'])){
-	  	$conditions[] = "rakennus=?";
-		$data[] = $_POST['rakennus'];
-
-	}
 	if(!empty($_POST['hintabp'])){
 		$conditions[] = "hintabp=?";
 		$data[] = $_POST['hintabp'];
@@ -48,12 +45,10 @@
 		$data[] = $_POST['arvolisa'];
 
 	}
-	if(empty($conditions)) {
-		$kysely = $yhteys->prepare("SELECT * FROM rakennustyypit");
-		$kysely->execute();
-	} else {
-		$sql = "SELECT * FROM rakennustyypit WHERE " . implode(" AND ", $conditions);
-		$kysely = $yhteys->prepare($sql);
-		$kysely->execute($data);
-	}
+	$data[] = $_POST['rakennus'];
+	$sql = "UPDATE rakennustyypit SET " . implode(", ", $conditions) . " WHERE rakennus=?";
+	$kysely = $yhteys->prepare($sql);
+	$kysely->execute($data);
+
+	header("Location: ../rakennustyypit.php");
 ?>
