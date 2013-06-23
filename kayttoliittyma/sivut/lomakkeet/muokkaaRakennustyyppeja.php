@@ -4,14 +4,22 @@
 
 <html>
  <head>
-  <title>Muokkaa rakennustyyppejä</title>
+  	<title>Muokkaa rakennustyyppejä</title>
+	<?php
+		require_once '../tyylit/ylaKehys.html';
+	?>
  </head>
  <body>
- 
+ 	<div id="framecontent">
+	<div class="innertube">
 	<?php
 		require_once '../sivurakenne.php';
 	?>
+	</div>
+	</div>
 
+	<div id="maincontent">
+	<div class="innertube">
 	<h2>Muokkaa rakennustyyppejä</h2>
 	
 	<form action="rakennustyyppienMuokkaus.php" method="post">
@@ -36,7 +44,8 @@
 	<input type="submit" value="Muuta">
 	</form> 
 
-<a href="http://pisapisa.users.cs.helsinki.fi/sivut/rakennustyypit.php">Rakennustyypit</a>
+	</div>
+	</div>
 
  </body>
 </html>

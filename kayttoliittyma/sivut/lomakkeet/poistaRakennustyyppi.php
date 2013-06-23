@@ -4,14 +4,23 @@
 
 <html>
  <head>
-  <title>Poista rakennustyyppi</title>
+  	<title>Poista rakennustyyppi</title>
+	<?php
+		require_once '../tyylit/ylaKehys.html';
+	?>
  </head>
  <body>
- 
+ 	
+	<div id="framecontent">
+	<div class="innertube">
 	<?php
 		require_once '../sivurakenne.php';
 	?>
+	</div>
+	</div>
 
+	<div id="maincontent">
+	<div class="innertube">
 	<h2>Poista rakennustyyppi</h2>
 	
 	<form action="rakennustyypinPoisto.php" method="post">
@@ -20,7 +29,8 @@
 	<input type="submit" value="Poista">
 	</form> 
 
-<a href="http://pisapisa.users.cs.helsinki.fi/sivut/rakennustyypit.php">Rakennustyypit</a>
+	</div>
+	</div>
 
  </body>
 </html>

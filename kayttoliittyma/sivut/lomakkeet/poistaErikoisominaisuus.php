@@ -4,14 +4,22 @@
 
 <html>
  <head>
-  <title>Poista erikoisominaisuus</title>
+ 	 <title>Poista erikoisominaisuus</title>
+	<?php
+		require_once '../tyylit/ylaKehys.html';
+	?>
  </head>
  <body>
- 
+ 	<div id="framecontent">
+	<div class="innertube">
 	<?php
 		require_once '../sivurakenne.php';
 	?>
+	</div>
+	</div>
 
+	<div id="maincontent">
+	<div class="innertube">
 	<h2>Poista erikoisominaisuus</h2>
 	
 	<form action="erikoisominaisuuksienPoisto.php" method="post">
@@ -20,7 +28,8 @@
 	<input type="submit" value="Poista">
 	</form> 
 
-<a href="http://pisapisa.users.cs.helsinki.fi/sivut/erikoisominaisuudet.php">Rakennustyyppien erikoisominaisuudet</a>
+	</div>
+	</div>
 
  </body>
 </html>

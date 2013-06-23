@@ -4,14 +4,22 @@
 
 <html>
  <head>
-  <title>Lisää erikoisominaisuus</title>
+  	<title>Lisää erikoisominaisuus</title>
+	<?php
+		require_once '../tyylit/ylaKehys.html';
+	?>
  </head>
  <body>
- 
+ 	<div id="framecontent">
+	<div class="innertube">
 	<?php
 		require_once '../sivurakenne.php';
 	?>
+	</div>
+	</div>	
 
+	<div id="maincontent">
+	<div class="innertube">
 	<h2>Lisää erikoisominaisuus</h2>
 	
 	<form action="erikoisominaisuuksienLisays.php" method="post">
@@ -22,7 +30,8 @@
 	<input type="submit" value="Luo">
 	</form> 
 
-<a href="http://pisapisa.users.cs.helsinki.fi/sivut/erikoisominaisuudet.php">Rakennustyypien erikoisominaisuudet</a>
+	</div>
+	</div>
 
  </body>
 </html>

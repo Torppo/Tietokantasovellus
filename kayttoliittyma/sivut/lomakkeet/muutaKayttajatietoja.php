@@ -4,14 +4,22 @@
 
 <html>
  <head>
-  <title>Muokka käyttäjää</title>
+  	<title>Muokka käyttäjää</title>
+	<?php
+		require_once '../tyylit/ylaKehys.html';
+	?>
  </head>
  <body>
- 
+ 	<div id="framecontent">
+	<div class="innertube">
 	<?php
 		require_once '../sivurakenne.php';
 	?>
+	</div>
+	</div>
 
+	<div id="maincontent">
+	<div class="innertube">
 	<h2>Muokka käyttäjää <?php echo $_SESSION["kayttaja"]; ?>.</h2>
 	
 	<form action="kayttajatietojenMuuttaminen.php" method="post">
@@ -28,7 +36,8 @@
 	<input type="submit" value="Muuta">
 	</form> 
 
-	<a href="http://pisapisa.users.cs.helsinki.fi/sivut/kayttajat.php">Käyttäjät</a>
+	</div>
+	</div>
 
  </body>
 </html>

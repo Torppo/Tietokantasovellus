@@ -4,14 +4,22 @@
 
 <html>
  <head>
-  <title>Lisää käyttäjä</title>
+  	<title>Lisää käyttäjä</title>
+	<?php
+		require_once '../tyylit/ylaKehys.html';
+	?>
  </head>
  <body>
- 
+ 	<div id="framecontent">
+	<div class="innertube">
 	<?php
 		require_once '../sivurakenne.php';
 	?>
+	</div>
+	</div>
 
+	<div id="maincontent">
+	<div class="innertube">
 	<h2>Lisää käyttäjä</h2>
 	
 	<form action="kayttajanLisays.php" method="post">
@@ -26,7 +34,10 @@
 	<p>Rooli: <br>
 	<input type="text" name="rooli"></p>
 	<input type="submit" value="Luo">
-	</form> 
+	</form>
+
+	</div>
+	</div> 
 
  </body>
 </html>

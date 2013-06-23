@@ -4,14 +4,22 @@
 
 <html>
  <head>
-  <title>Lisää rakennus</title>
+ 	<title>Lisää rakennus</title>
+	<?php
+		require_once 'tyylit/ylaKehys.html';
+	?>
  </head>
  <body>
- 
+ 	<div id="framecontent">
+	<div class="innertube">
 	<?php
 		require_once '../sivurakenne.php';
 	?>
+	</div>
+	</div>
 
+	<div id="maincontent">
+	<div class="innertube">
 	<h2>Lisää rakennus</h2>
 	
 	<form action="rakennuksenLisays.php" method="post">
@@ -22,7 +30,10 @@
 	<p>Kaupunki: <br>
 	<input type="integer" name="kaupunki"></p>
 	<input type="submit" value="Luo">
-	</form> 
+	</form>
+
+	</div>
+	</div> 
 
  </body>
 </html>

@@ -4,14 +4,22 @@
 
 <html>
  <head>
-  <title>Uudelleen nimeä rakennus</title>
+  	<title>Uudelleen nimeä rakennus</title>
+	<?php
+		require_once '../tyylit/ylaKehys.html';
+	?>
  </head>
  <body>
- 
+ 	<div id="framecontent">
+	<div class="innertube">
 	<?php
 		require_once '../sivurakenne.php';
 	?>
+	</div>
+	</div>
 
+	<div id="maincontent">
+	<div class="innertube">
 	<h2>Uudelleen nimeä rakennus</h2>
 	
 	<form action="rakennustenMuokkaus.php" method="post">
@@ -20,7 +28,10 @@
 	<p>Nimi: <br>
 	<input type="text" name="nimi"></p>
 	<input type="submit" value="Muuta">
-	</form> 
+	</form>
+
+	</div>
+	</div> 
 
  </body>
 </html>

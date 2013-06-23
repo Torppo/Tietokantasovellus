@@ -6,13 +6,23 @@
 
 <html>
  <head>
-  <title>Käyttäjät</title>
+  	<title>Käyttäjät</title>
+	<?php
+		require_once 'tyylit/ylavasenKehys.html';
+	?>
  </head>
  <body>
  
+	<div id="framecontentTop">
+	<div class="innertube">
 	<?php
 		require_once 'sivurakenne.php';
 	?>
+	</div>
+	</div>
+	
+	<div id="framecontentLeft">
+	<div class="innertube">
 	
 	<h2>Käyttäjät</h2>
 	<h3>Käyttäjähaku</h3>
@@ -25,6 +35,12 @@
 	<input type="text" name="rooli"></p>
 	<input type="submit" value="Hae">
 	</form>
+
+	</div>
+	</div>
+
+	<div id="maincontent">
+	<div class="innertube">
 
 	<p>
 		<?php
@@ -43,6 +59,10 @@
 	<a href="http://pisapisa.users.cs.helsinki.fi/sivut/lomakkeet/lisaaKayttaja.php">Lisää käyttäjä</a>
 	<a href="http://pisapisa.users.cs.helsinki.fi/sivut/lomakkeet/muutaKayttajatietoja.php">Muokkaa käyttäjää</a>
 	<a href="http://pisapisa.users.cs.helsinki.fi/sivut/lomakkeet/poistaKayttaja.php">Poista käyttäjä</a>
+
+	</div>
+	</div>
+
 
  </body>
 </html>

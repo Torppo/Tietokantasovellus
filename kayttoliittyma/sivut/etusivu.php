@@ -3,21 +3,30 @@
 ?>
 
 <html>
- <head>
-  <title>Etusivu</title>
- </head>
+ 	<head>
+  	<title>Etusivu</title>
+	<?php
+		require_once 'tyylit/ylaKehys.html';
+	?>
+ 	</head>
  <body>
- 
+ 	
+	<div id="framecontent">
+	<div class="innertube">
 	<?php
 		require_once 'sivurakenne.php';
 	?>
-
-	<h2>h2</h2>
-	<p>Esittely</p>
+	</div>
+	</div>
+	
+	<div id="maincontent">
+	<div class="innertube">
+	<h2>Tervetuloa!</h2>
 
 	<?php
 		require_once 'linkit/kaikkiLinkit.php';
 	?>
-	
+	</div>
+	</div>
  </body>
 </html>

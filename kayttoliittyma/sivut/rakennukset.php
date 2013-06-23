@@ -6,13 +6,23 @@
 
 <html>
  <head>
-  <title>Rakennukset</title>
+	<title>Rakennukset</title>
+	<?php
+		require_once 'tyylit/ylavasenKehys.html';
+	?>
  </head>
  <body>
  
+	<div id="framecontentTop">
+	<div class="innertube">
 	<?php
 		require_once 'sivurakenne.php';
 	?>
+	</div>
+	</div>
+
+	<div id="framecontentLeft">
+	<div class="innertube">
 	
 	<h2>Rakennukset</h2>
 	<h3>Rakennushaku</h3>
@@ -26,9 +36,21 @@
 	<input type="submit" value="Hae">
 	</form>
 
+	</div>
+	</div>
+
+	<div id="maincontent">
+	<div class="innertube">
+
 	<p>
 		<?php
-		echo "<table border>";
+		echo "<table border>
+		<tr>
+		<th>Tunnus</th>
+		<th>Nimi</th>
+		<th>Rakennustyyppi</th>
+		<th>Kaupunki</th>
+		</tr>";
 		while ($rivi = $kysely->fetch()) {
 			echo "<tr>";
 			echo "<td>" . $rivi["id"] . "</td>";
@@ -44,6 +66,10 @@
 	<a href="http://pisapisa.users.cs.helsinki.fi/sivut/lomakkeet/lisaaRakennus.php">Lisää rakennus</a>
 	<a href="http://pisapisa.users.cs.helsinki.fi/sivut/lomakkeet/muokkaaRakennuksia.php">Uudelleennimeä rakennus</a>
 	<a href="http://pisapisa.users.cs.helsinki.fi/sivut/lomakkeet/poistaRakennus.php">Poista rakennus</a>
+	
+	</div>
+	</div>
+
 
  </body>
 </html>

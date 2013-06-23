@@ -4,14 +4,22 @@
 
 <html>
  <head>
-  <title>Muokka kaupunkeja</title>
+ 	<title>Muokka kaupunkeja</title>
+	<?php
+		require_once '../tyylit/ylaKehys.html';
+	?>
  </head>
  <body>
- 
+ 	<div id="framecontent">
+	<div class="innertube">
 	<?php
 		require_once '../sivurakenne.php';
-	?>
+	?>	
+	</div>
+	</div>
 
+	<div id="maincontent">
+	<div class="innertube">
 	<h2>Muokkaa kaupunkeja</h2>
 	
 	<form action="kaupunginMuokkaus.php" method="post">
@@ -23,6 +31,9 @@
 	<input type="integer" name="rantoja"></p>
 	<input type="submit" value="Muuta">
 	</form> 
+
+	</div>
+	</div>
 
  </body>
 </html>
