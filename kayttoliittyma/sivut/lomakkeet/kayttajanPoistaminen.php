@@ -1,4 +1,5 @@
 <?php
+//Tarkistaa, että käyttäjiä on ainakin kaksi jäljellä ja poistaa halutun käyttäjän, jos näin on. Jos käyttäjiä on vain ylksi kpl siitä ilmoitetaan eikä sitä poisteta.
 	require_once '../istunto.php';
 	require_once '../../yhteys.php';
 	

@@ -1,3 +1,4 @@
+<!Sovelluksen etusivu -->
 <?php
 	require_once 'istunto.php';
 ?>
@@ -24,6 +25,7 @@
 	<h2>Tervetuloa!</h2>
 
 	<?php
+	//Sisältää kaikki sivuston linkit.
 		require_once 'linkit/kaikkiLinkit.php';
 	?>
 	</div>

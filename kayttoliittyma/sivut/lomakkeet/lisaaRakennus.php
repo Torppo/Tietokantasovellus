@@ -1,3 +1,4 @@
+<!Rakennuksien lisäyslomake. -->
 <?php
 	require_once '../istunto.php';
 ?>

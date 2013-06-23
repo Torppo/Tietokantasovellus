@@ -1,3 +1,4 @@
+<!Erikoisominaisuuden poistolomake. -->
 <?php
 	require_once '../istunto.php';
 ?>

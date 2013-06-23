@@ -1,3 +1,4 @@
+<!Rakennustyyppit esittelevä sivu. -->
 <?php
 	require_once 'istunto.php';
 	require_once '../yhteys.php';
@@ -25,6 +26,8 @@
 	<div class="innertube">
 
 	<h2>Rakennustyypit</h2>
+
+	<!Rakennustyyppihaun lomake. -->
 	<h3>Rakennustyyppihaku</h3>
 
 	<form  action="rakennustyypit.php" method="post">
@@ -57,6 +60,7 @@
 
 	<p>
 	<?php
+	//Rakennnustyyppien tulostus.
 		echo "<table border>
 		<tr>
 		<th>Rakennus</th>

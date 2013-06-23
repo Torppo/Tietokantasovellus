@@ -1,3 +1,4 @@
+<!Rakennustyypien lisäyslomake. -->
 <?php
 	require_once '../istunto.php';
 ?>

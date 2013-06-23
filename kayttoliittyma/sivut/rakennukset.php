@@ -1,3 +1,4 @@
+<!Rakennukset esittelevä sivu. -->
 <?php
 	require_once 'istunto.php';
 	require_once '../yhteys.php';
@@ -25,6 +26,8 @@
 	<div class="innertube">
 	
 	<h2>Rakennukset</h2>
+
+	<!Rakennushaun lomake -->
 	<h3>Rakennushaku</h3>
 	<form  action="rakennukset.php" method="post">
 	<p>Nimi: <br>
@@ -44,6 +47,7 @@
 
 	<p>
 		<?php
+		//Rakennusten tulostus.
 		echo "<table border>
 		<tr>
 		<th>Tunnus</th>

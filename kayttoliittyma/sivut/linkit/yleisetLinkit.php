@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-
+<!Sisältää yleisimmät linkit, jotka löytyvät kaikkien sivujen sivurakenteesta. -->
 <html>
 	<body>
 	

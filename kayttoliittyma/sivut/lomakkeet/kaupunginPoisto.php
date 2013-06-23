@@ -1,4 +1,5 @@
 <?php
+//Suorittaa kaupungin poiston ja siihen liittyvien rakennusten poiston.
 	require_once '../istunto.php';
 	require_once '../../yhteys.php';
 	

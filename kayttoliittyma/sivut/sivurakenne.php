@@ -1,3 +1,4 @@
+<!Kaikille sivuille kuuluva sivurakenne. Sisältää yleihaun lomakkeen, joka etsii tietoa kaikista tietokannan tauluista paitsi kayttajat -taulusta. -->
 <h1>Kaupunkitietokanta</h1>
 
 <p> <?php echo $_SESSION["kayttaja"]; ?></p>
@@ -6,7 +7,7 @@
 <?php
 	require_once 'linkit/yleisetLinkit.php';
 ?>
-
+<!Yleishaun lomake. -->
 <h3>Yleishaku</h3>
 <form  action="/sivut/sisallonHaku/yleishaku.php" method="post">
 <p>Hakusana: <br>

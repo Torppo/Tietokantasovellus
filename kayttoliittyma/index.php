@@ -1,5 +1,5 @@
 <!DOCTYPE	html>
-
+<!Kirjautumissivu. Sisältää kirjautumisen lomakkeen. -->
 <html>
 	<head>
 	<title>Kirjautuminen</title>

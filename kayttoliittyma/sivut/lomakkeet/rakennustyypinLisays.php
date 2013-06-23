@@ -1,4 +1,5 @@
 <?php
+//Lisää rakennustyypin. Rakennus, hintbp ja koko ovat pakollisia arvoja. Jos muita arvoja ei anneta laitetaan niihin 0.
 	require_once '../istunto.php';
 	require_once '../../yhteys.php';	
 	

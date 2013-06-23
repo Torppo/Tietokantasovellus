@@ -1,4 +1,5 @@
 <?php
+//Aloittaa istunnon ja tarkistaa kirjautumistietojen oikeellisuuden. Jos kirjautumistiedot ovat oikein se johdattaa etusivulle muuten se ilmoitettaa tietojen virheeellisyydestä.
  session_start();
 
 	require_once '../yhteys.php';

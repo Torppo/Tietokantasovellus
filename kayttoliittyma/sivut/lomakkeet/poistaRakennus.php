@@ -1,3 +1,4 @@
+<!Rakennuksen poistolomake. -->
 <?php
 	require_once '../istunto.php';
 ?>

@@ -1,4 +1,5 @@
 <?php
+//Muuttaa rakennuksen nimeä.
 	require_once '../istunto.php';
 	require_once '../../yhteys.php';
 	

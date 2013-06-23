@@ -1,4 +1,5 @@
 <?php
+//Poistaa rakennuksen.
 	require_once '../istunto.php';
 	require_once '../../yhteys.php';
 	

@@ -1,3 +1,4 @@
+<!Kaupungit esittelevä sivu. -->
 <?php
 	require_once 'istunto.php';
 	require_once '../yhteys.php';
@@ -25,6 +26,8 @@
 	<div class="innertube">
 
 	<h2>Kaupungit</h2>
+	
+	<!Kaupunkihaun lomake -->
 	<h3>Kaupunkihaku</h3>
 	<form  action="kaupungit.php" method="post">
 	<p>Kaupunki: <br>
@@ -43,7 +46,8 @@
 	<div class="innertube">
 	<p>
 		<?php
-		echo "<table border=>
+		//Kaupunkien tulostus.
+		echo "<table border>
 		<tr>
 		<th>Kaupungit</th>
 		<th>Asukasluku</th>

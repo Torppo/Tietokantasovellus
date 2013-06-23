@@ -1,4 +1,5 @@
 <?php
+//Muokkaa rakennustyyppiä. Alla testataan mitkä arvot on annettu ja luodaan sen pohjalta update -lause.
 	require_once '../istunto.php';
 	require_once '../../yhteys.php';
 	

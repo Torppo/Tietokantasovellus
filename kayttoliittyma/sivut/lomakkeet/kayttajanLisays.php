@@ -1,4 +1,5 @@
 <?php
+//Lisää uuden käyttäjän.
 	require_once '../istunto.php';
 	require_once '../../yhteys.php';
 	

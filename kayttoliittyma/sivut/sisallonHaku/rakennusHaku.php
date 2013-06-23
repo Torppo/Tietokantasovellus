@@ -1,4 +1,5 @@
 <?php
+//Testataan mitkä lomakkeen kentät on täytetty ja muodostetaan kysely sen pohjalta. Jos mikään kenttä ei ole täytetty haetaan taulun koko sisältö.
 $conditions = array();
 $data = array();
 

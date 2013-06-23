@@ -1,3 +1,4 @@
+<!Sivulla näytetään yleihaun tulokset. -->
 <?php
 	require_once '../istunto.php';
 	require_once '../../yhteys.php';
@@ -23,6 +24,8 @@
 	<div id="maincontent">
 	<div class="innertube">
 	<p>
+
+<!Taulujen tulostukset -->
 		<?php
 		echo "<table border>
 		<tr>

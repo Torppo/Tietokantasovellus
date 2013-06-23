@@ -1,3 +1,4 @@
+<!Rakennustyyppien poistolomake. -->
 <?php
 	require_once '../istunto.php';
 ?>

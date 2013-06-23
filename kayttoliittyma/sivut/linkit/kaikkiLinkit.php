@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!Sisältää kaikki sivuston linkit taulukossa. -->
 	
 <html>
 	<head>

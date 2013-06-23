@@ -1,3 +1,4 @@
+<!Kayttajät esittelevä sivu. -->
 <?php
 	require_once 'istunto.php';
 	require_once '../yhteys.php';
@@ -25,6 +26,8 @@
 	<div class="innertube">
 	
 	<h2>Käyttäjät</h2>
+
+	<!Käyttäjähaun lomake. -->
 	<h3>Käyttäjähaku</h3>
 	<form  action="kayttajat.php" method="post">
 	<p>Tunnus: <br>
@@ -44,6 +47,7 @@
 
 	<p>
 		<?php
+		//Käyttäjien tulostus.
 		echo "<table border=>
 		<tr>
 		<th>Tunnus</th>

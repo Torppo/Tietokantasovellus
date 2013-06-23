@@ -1,4 +1,5 @@
 <?php
+//Lisää uuden rakennuksen. Jos simeä ei anneta tulee nimeksi 'ei määritelty'.
 	require_once '../istunto.php';
 	require_once '../../yhteys.php';
 	

@@ -1,4 +1,5 @@
 <?php
+//Ottaa yhteyden tietokantaan.
 	try {
 		$yhteys = new PDO("pgsql:dbname=pisapisa");
 	} catch(PDOException $e) {

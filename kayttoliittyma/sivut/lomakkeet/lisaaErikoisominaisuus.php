@@ -1,3 +1,4 @@
+<!Erikoisominaisuuden lisäyslomake. -->
 <?php
 	require_once '../istunto.php';
 ?>

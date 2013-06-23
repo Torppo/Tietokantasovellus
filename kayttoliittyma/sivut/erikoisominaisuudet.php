@@ -25,6 +25,8 @@
 	<div class="innertube">
 
 	<h2>Rakennustyyppien erikoisominaisuudet</h2>
+
+	<!Erikoisominaisuuksien haun lomake. -->
 	<h3>Erikoisominaisuushaku</h3>
 	<form  action="erikoisominaisuudet.php" method="post">
 	<p>Rakennus: <br>
@@ -40,6 +42,7 @@
 
 	<p>
 		<?php
+		//Erikoisominaisuuksien taulukon tulostus.
 		echo "<table border>
 		<tr>
 		<th>Rakennus</th>

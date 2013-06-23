@@ -1,4 +1,5 @@
 <?php
+//Suorittaa kaupungin muokkauksen.
 	require_once '../istunto.php';
 	require_once '../../yhteys.php';
 	

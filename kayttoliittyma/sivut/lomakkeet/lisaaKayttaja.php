@@ -1,3 +1,4 @@
+<!Kayttajien lisäyslomake. -->
 <?php
 	require_once '../istunto.php';
 ?>

@@ -1,4 +1,5 @@
 <?php
+//Yleishaun kyselyn toteutus. Testataan onko hakusana numero. Jos se on numero, tehdään kysely kaikkiin paitsi käyttäjät -tauluun ja niihin tauluihin joissa ei ole numeroarvoja ja vain numeroarvoiksi määriteltyyn sisältöön. Jos hakusana ei ollut numero tehdään kysely kaikkiin paitsi käyttäjät -tauluun ja vain merkkijonoiksi määriteltyyn sisältöön.
 	if(is_numeric($_POST["hakusana"])) {
 		try {
 			$stormlandKysely = $yhteys->prepare("SELECT * FROM stormland WHERE asukasluku=? OR rantoja=?");

@@ -1,4 +1,5 @@
 <?php
+//Muuttaa kirjautuneena olevan käyttäjän tietoja. Ensin tarkistetaan onko kayttaja varmasti sama henkilö joka kirjautui sovellukseen. Jonka jäkeen määritetään muutettavat tiedot lomakkeen kenttien syötön mukaan. Jos salasanaa vaihdetaan tulee se kirjoittaa kahdesti, jotta se tulisi muutettua oikein.
 	require_once '../istunto.php';
 	require_once '../../yhteys.php';
 	

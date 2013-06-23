@@ -1,4 +1,5 @@
 <?php
+//Suorittaa erikoisominaisuuden lisäyksen.
 	require_once '../istunto.php';
 	require_once '../../yhteys.php';
 	
