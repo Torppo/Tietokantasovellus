@@ -44,7 +44,12 @@
 
 	<p>
 		<?php
-		echo "<table border>";
+		echo "<table border=>
+		<tr>
+		<th>Tunnus</th>
+		<th>Nimi</th>
+		<th>Rooli</th>
+		</tr>";
 		while ($rivi = $kysely->fetch()) {
 			echo "<tr>";
 			echo "<td>" . $rivi["kayttajatunnus"] . "</td>";
